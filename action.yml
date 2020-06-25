@@ -10,4 +10,6 @@ inputs:
     description: "The URL of the Heroku web dyno"
 runs:
   using: "docker"
-  main: "Dockerfile"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.URL }}

@@ -1,0 +1,13 @@
+name: "Heroku Awake"
+description: "Keep a free Heroku dyno awake"
+author: "Michael Esteban"
+branding:
+  icon: "sun"
+  color: "yellow"
+inputs:
+  URL:
+    required: true
+    description: "The URL of the Heroku web dyno"
+runs:
+  using: "docker"
+  main: "Dockerfile"
